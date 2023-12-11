@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Profile</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="profile-container">
+        <h1 style="color: rgb(241, 207, 14); font-family: 'Times New Roman', Times, serif; font-weight: bold
+        ;">My Profile</h1>
+
+        <div id="image-container" class="image-container">
+            <label for="image"></label>
+            <input type="file" id="image" accept="image/*">
+            <div class="image-preview" id="image-preview"></div>
+            <button id="delete-image" class="delete-button">Edit Profile Photo</button>
+        </div>
+        <br>
+
+        <form id="profile-form">
+            <label for="name"><i>Name:</i></label>
+            <input type="text" id="name" placeholder="Enter your name">
+
+            <label for="birthday"><i>Birthday:</i></label>
+            <input type="text" id="birthday" placeholder="DD/MM/YYYY">
+
+            <label for="telephone"><i>Telephone:</i></label>
+            <input type="tel" id="telephone" placeholder="e.g., 0712345678">
+
+            <label for="nic"><i>NIC:</i></label>
+            <input type="text" id="nic" placeholder="e.g., 123456789V">
+
+            <button type="submit" id="submit-button">Submit</button>
+        </form>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
